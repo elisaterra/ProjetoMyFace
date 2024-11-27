@@ -1,0 +1,192 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com uma alternativa sans-serif caso não esteja disponível */
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding (espaçamento interno) padrão do navegador */
+    background-color: #f5e5d9; /* Define a cor de fundo do corpo da página */
+    color: #5e4635; /* Define a cor do texto */
+    line-height: 1.6; /* Ajusta o espaçamento entre as linhas de texto */
+}
+
+header {
+    background-color: #5e4635; /* Define a cor de fundo do header */
+    padding: 10px 0; /* Adiciona um padding (espaçamento interno) de 10px no topo e na base */
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    position: absolute; /* Posiciona a logo no canto */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 20px; /* Ajusta a posição horizontal */
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+    }
+
+.menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Torna a lista flexível, alinhando os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+.menu ul li {
+    margin: 0 15px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color:  #a67c52; /* Define a cor do texto do link */
+    font-weight: bold; /* Deixa o texto do link em negrito */
+    padding: 8px 12px; /* Adiciona padding dentro dos links */
+    border-radius: 5px; /* Arredonda as bordas do link */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+}
+
+.menu ul li a:hover, .menu ul li a.active {
+    background-color: #ffffff; /* Altera a cor de fundo do link quando o usuário passa o mouse sobre ele ou se o link estiver ativo */
+}
+
+/* Seção de introdução */
+.introducao {
+    text-align: center; /* Centraliza o texto da seção */
+    padding: 50px 20px; /* Adiciona padding de 50px nas partes superior e inferior, e 20px nas laterais */
+    background-color: #5e4635; /* Define a cor de fundo da seção */
+    color: white; /* Define a cor do texto da seção */
+}
+
+.introducao h1 {
+    font-size: 36px; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Adiciona margem abaixo do título */
+}
+
+.introducao p {
+    font-size: 18px; /* Define o tamanho da fonte do parágrafo */
+    width: 60%; /* Define a largura do parágrafo */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente */
+}
+
+/* Seção de missão */
+.missao {
+    display: flex; /* Torna a seção flexível, com os itens alinhados horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: space-between; /* Espaça os itens igualmente entre as extremidades da seção */
+    padding: 50px 20px; /* Adiciona padding nas laterais e no topo/baixo */
+    background-color: #f1d5c6; /* Define a cor de fundo da seção */
+}
+
+.missao-texto {
+    width: 50%; /* Define a largura do bloco de texto para 50% */
+}
+
+.missao-texto h2 {
+    font-size: 28px; /* Define o tamanho da fonte do subtítulo */
+    color: #5e4635; /* Define a cor do subtítulo */
+}
+
+.missao-texto p {
+    font-size: 18px; /* Define o tamanho da fonte do parágrafo */
+    color: #7a5b3d; /* Define a cor do texto do parágrafo */
+}
+
+.missao-img img {
+    width: 70%; /* Define a largura da imagem como 70% do contêiner */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+/* Seção de valores */
+.valores {
+    background-color: #f5e5d9; /* Define a cor de fundo da seção */
+    padding: 40px 20px; /* Adiciona padding nas laterais e no topo/baixo */
+    text-align: center; /* Centraliza o texto da seção */
+}
+
+.valores h2 {
+    font-size: 28px; /* Define o tamanho da fonte do subtítulo */
+    color: #5e4635; /* Define a cor do subtítulo */
+    margin-bottom: 20px; /* Adiciona margem abaixo do subtítulo */
+}
+
+.valores-container {
+    display: flex; /* Torna a seção flexível, com os itens alinhados horizontalmente */
+    justify-content: space-around; /* Distribui os itens igualmente entre os espaços da seção */
+    margin-top: 30px; /* Adiciona margem acima dos itens */
+}
+
+.valor {
+    width: 30%; /* Define a largura do bloco de cada valor para 30% */
+    padding: 20px; /* Adiciona padding dentro dos blocos de valor */
+    background-color: #fff; /* Define a cor de fundo dos blocos de valor */
+    border-radius: 10px; /* Arredonda as bordas dos blocos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor dos blocos */
+    text-align: center; /* Centraliza o texto dentro de cada bloco */
+}
+
+.valor img {
+    width: 100%; /* Define a largura da imagem como 100% do bloco */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz a imagem cobrir toda a área disponível, cortando se necessário */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+.valor h3 {
+    font-size: 22px; /* Define o tamanho da fonte do título dentro de cada valor */
+    color: #5e4635; /* Define a cor do título */
+    margin-top: 10px; /* Adiciona margem acima do título */
+}
+
+.valor p {
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo */
+    color: #7a5b3d; /* Define a cor do parágrafo */
+    margin-top: 10px; /* Adiciona margem acima do parágrafo */
+}
+
+/* Seção interativa */
+.interativo {
+    background-color: #fff; /* Define a cor de fundo da seção */
+    padding: 50px 20px; /* Adiciona padding nas laterais e no topo/baixo */
+    text-align: center; /* Centraliza o texto da seção */
+}
+
+.interativo h2 {
+    font-size: 28px; /* Define o tamanho da fonte do subtítulo */
+    color: #5e4635; /* Define a cor do subtítulo */
+}
+
+.interativo-container {
+    display: flex; /* Torna a seção flexível, com os itens alinhados horizontalmente */
+    justify-content:center; /* Centraliza os itens dentro da seção */
+    margin-top: 40px; /* Adiciona margem acima dos itens */
+}
+
+.interativo-item {
+    width: 40%; /* Define a largura do bloco de interação para 40% */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+    background-color: #f5e5d9; /* Define a cor de fundo do bloco */
+    border-radius: 10px; /* Arredonda as bordas do bloco */
+    padding: 10px; /* Adiciona padding dentro do bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do bloco */
+}
+
+.interativo-item img {
+    width: 100%; /* Define a largura da imagem como 100% do bloco */
+    height: 300px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz a imagem cobrir toda a área disponível, cortando se necessário */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+}
+
+.interativo-item p {
+    font-size: 16px; /* Define o tamanho da fonte do parágrafo */
+    color: #7a5b3d; /* Define a cor do parágrafo */
+    margin-top: 10px; /* Adiciona margem acima do parágrafo */
+}
+
+/* Rodapé */
+footer {
+    background-color: #5e4635; /* Define a cor de fundo do rodapé */
+    color: white; /* Define a cor do texto no rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Adiciona padding no topo e na base do rodapé */
+    margin-top: 20px; /* Adiciona margem acima do rodapé */
+}

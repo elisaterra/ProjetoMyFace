@@ -1,0 +1,133 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo da página como Arial, com uma alternativa sans-serif caso não tenha Arial */
+    margin: 0; /* Remove a margem padrão ao redor da página */
+    padding: 0; /* Remove o preenchimento padrão ao redor da página */
+    background-color: #f5e5d9; /* Define a cor de fundo da página como um tom claro de bege */
+    color: #5e4635; /* Define a cor do texto como um tom escuro de marrom */
+}
+
+/* Cabeçalho e menu */
+header {
+    background-color: #5e4635; /* Define a cor de fundo do cabeçalho como um tom escuro de marrom */
+    padding: 60px 0; /* Adiciona 10px de preenchimento superior e inferior ao cabeçalho */
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    position: absolute; /* Posiciona a logo no canto */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 20px; /* Ajusta a posição horizontal */
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+    margin-top: -7px;
+    }
+
+.menu ul {
+    list-style: none; /* Remove os marcadores da lista (padrão para <ul>) */
+    display: flex; /* Aplica flexbox para organizar os itens da lista em linha */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+    padding: 0; /* Remove o preenchimento da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+.menu ul li {
+    margin: 0 15px; /* Adiciona 15px de margem à esquerda e à direita de cada item da lista */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: rgb(35, 18, 0); /* Define a cor do texto do link como um tom escuro */
+    font-weight: bold; /* Torna o texto do link em negrito */
+    padding: 8px 12px; /* Adiciona 8px de preenchimento vertical e 12px horizontal ao link */
+    border-radius: 5px; /* Aplica bordas arredondadas de 5px ao link */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos para a mudança de cor de fundo */
+}
+
+.menu ul li a:hover, .menu ul li a.active {
+    background-color: #a67c52; /* Altera a cor de fundo do link quando o mouse passa por cima ou quando o link está ativo */
+    color: white; /* Muda a cor do texto para branco quando o mouse passa por cima ou o link está ativo */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo principal */
+    text-align: center; /* Centraliza o texto dentro do elemento <main> */
+}
+
+h1 {
+    margin-bottom: 10px; /* Adiciona 10px de margem inferior ao título h1 */
+}
+
+.intro {
+    font-size: 18px; /* Define o tamanho da fonte para a classe intro */
+    margin-bottom: 30px; /* Adiciona 30px de margem inferior à introdução */
+}
+
+/* Estilo das curiosidades */
+.curiosidades {
+    display: grid; /* Aplica grid layout ao contêiner das curiosidades */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Cria colunas responsivas com mínimo de 300px de largura e distribuição automática */
+    gap: 20px; /* Adiciona 20px de espaço entre as colunas */
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor da seção */
+}
+
+.curiosidade {
+    position: relative; /* Define o posicionamento relativo para posicionamento absoluto de elementos filhos */
+    overflow: hidden; /* Garante que os elementos fora da área do contêiner não sejam visíveis */
+    border-radius: 15px; /* Aplica bordas arredondadas de 15px às caixas de curiosidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aplica uma sombra sutil à caixa de curiosidade */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para mudanças de escala */
+}
+
+.curiosidade:hover {
+    transform: scale(1.05); /* Aumenta a escala da caixa de curiosidade em 5% quando o mouse passa sobre ela */
+}
+
+.curiosidade img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 100%; /* Faz a imagem ocupar toda a altura do contêiner */
+    object-fit: cover; /* Garante que a imagem cubra completamente o contêiner sem distorção */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave para a opacidade da imagem */
+}
+
+.curiosidade:hover img {
+    opacity: 0.7; /* Torna a imagem 70% opaca quando o mouse passa sobre a caixa de curiosidade */
+}
+
+.curiosidade .texto {
+    position: absolute; /* Posiciona o texto de forma absoluta em relação ao contêiner da curiosidade */
+    bottom: 0; /* Alinha o texto à parte inferior do contêiner */
+    left: 0; /* Alinha o texto à esquerda do contêiner */
+    width: 100%; /* Faz o texto ocupar toda a largura do contêiner */
+    background: rgba(0, 0, 0, 0.7); /* Aplica um fundo semitransparente preto ao texto */
+    color: white; /* Define a cor do texto como branca */
+    padding: 20px; /* Adiciona 20px de preenchimento ao redor do texto */
+    box-sizing: border-box; /* Inclui o preenchimento no cálculo da largura e altura do elemento */
+    transform: translateY(100%); /* Inicialmente coloca o texto fora da tela (para baixo) */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para o movimento do texto */
+}
+
+.curiosidade:hover .texto {
+    transform: translateY(0); /* Move o texto para dentro do contêiner quando o mouse passa sobre a curiosidade */
+}
+
+.curiosidade h2 {
+    margin: 0 0 10px; /* Remove a margem superior e aplica 10px de margem inferior ao título h2 */
+    font-size: 20px; /* Define o tamanho da fonte do título h2 */
+}
+
+.curiosidade p {
+    margin: 0; /* Remove a margem do parágrafo */
+    font-size: 16px; /* Define o tamanho da fonte para os parágrafos dentro das curiosidades */
+}
+
+/* Rodapé */
+footer {
+    background-color: #5e4635; /* Define a cor de fundo do rodapé como um tom escuro de marrom */
+    color: white; /* Define a cor do texto do rodapé como branca */
+    text-align: center; /* Centraliza o texto no rodapé */
+    padding: 10px 0; /* Adiciona 10px de preenchimento superior e inferior ao rodapé */
+    margin-top: 20px; /* Adiciona 20px de margem superior ao rodapé */
+}

@@ -1,0 +1,131 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5e4635;
+    color: white;
+    padding: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    position: absolute; /* Posiciona a logo no canto */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 20px; /* Ajusta a posição horizontal */
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+    }
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    max-width: 1200px; /* Define uma largura máxima de 1200px */
+    margin: 0 auto;
+}
+
+.introducao {
+    text-align: center;
+    margin-bottom: 40px; /* Adiciona um espaço abaixo de 40px */
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Imagem Principal */
+.imagem-principal img {
+    display: block;  /* Define a imagem como um bloco para alinhar com outros elementos */
+    width: 100%;
+    margin: 0 auto 40px; /* Centraliza a imagem horizontalmente e adiciona uma margem inferior de 40px */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve à imagem */
+}
+
+/* Bloco de História */
+.bloco-historia {
+    display: flex;
+    align-items: center;  /* Alinha os itens no centro verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    background-color: #a67c52;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloco-historia .imagem img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Faz a imagem preencher o espaço definido sem distorção */
+}
+
+.bloco-historia .texto {
+    width: calc(100% - 350px);
+    padding-left: 20px;
+}
+
+.bloco-historia .texto h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #5e4635;
+}
+
+.bloco-historia .texto p {
+    font-size: 1rem;
+    color: #5e4635;
+}
+
+/* Rodapé */
+footer {
+    background-color: #5e4635;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Adiciona preenchimento interno no topo e na base */
+    margin-top: 20px;
+}
+
+/* Cabeçalho e menu */
+header {
+    background-color: #5e4635;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex;
+    justify-content: center;
+    padding: 0; /* Remove o preenchimento interno */
+    margin: 0;  /* Remove as margens */
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color:  rgb(35, 18, 0);
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Define uma transição suave para o fundo ao passar o mouse */
+}
+
+.menu ul li a:hover, .menu ul li a.active {
+    background-color: #a67c52;
+    color: white;
+}

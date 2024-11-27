@@ -1,0 +1,168 @@
+/* Estilo base do corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão como Arial */
+    background-color: #f5e5d9; /* Define a cor de fundo do corpo */
+    margin: 0; /* Remove a margem padrão do navegador */
+    color: #a67c52; /* Define a cor do texto do corpo */
+    display: flex; /* Usa o modelo flexbox para organizar os elementos filhos */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    min-height: 100vh; /* Garante que o corpo ocupe no mínimo 100% da altura da tela */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #5e4635; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+}
+
+header h1 {
+    margin: 0; /* Remove margem ao redor do título */
+    font-size: 2.5rem; /* Define o tamanho da fonte do título */
+
+}
+
+header .slogan {
+    font-style: italic; /* Aplica estilo itálico ao slogan */
+    font-size: 1.2rem; /* Define o tamanho da fonte do slogan */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    padding: 20px; /* Adiciona espaçamento interno */
+    flex: 1; /* Permite que o conteúdo principal expanda para ocupar o espaço restante da página */
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    position: absolute; /* Posiciona a logo no canto */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 20px; /* Ajusta a posição horizontal */
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+    }
+
+/* Estilo para os títulos de introdução */
+.intro h2 {
+    color: #5e4635; /* Define a cor do texto do título */
+}
+
+/* Estilo para o contêiner flexível */
+.container {
+    display: flex; /* Usa flexbox para organizar os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha, caso necessário */
+    gap: 40px; /* Adiciona espaçamento entre os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo para os cartões */
+.card {
+    background-color: #a67c52; /* Define a cor de fundo do cartão */
+    padding: 15px 20px; /* Adiciona espaçamento interno no cartão */
+    border-radius: 10px; /* Arredonda as bordas do cartão */
+    text-decoration: none; /* Remove o sublinhado dos links no cartão */
+    color: #fff; /* Define a cor do texto no cartão */
+    text-align: center; /* Centraliza o texto dentro do cartão */
+    font-size: 1.2rem; /* Define o tamanho da fonte do texto no cartão */
+    transition: transform 0.2s; /* Adiciona uma transição suave no efeito de transformação */
+    width: 300px; /* Define a largura fixa do cartão */
+    display: flex; /* Usa flexbox para organizar o conteúdo interno */
+    flex-direction: column; /* Organiza os elementos do cartão em uma coluna */
+    align-items: center; /* Centraliza os elementos do cartão horizontalmente */
+}
+
+.card img {
+    width: 100%; /* Define que a imagem ocupa toda a largura do cartão */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 8px; /* Arredonda as bordas da imagem */
+    margin-bottom: 10px; /* Adiciona margem inferior abaixo da imagem */
+}
+
+.card span {
+    font-size: 1.2rem; /* Define o tamanho da fonte do texto destacado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Efeito de hover no cartão */
+.card:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do cartão ao passar o mouse */
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #5e4635; /* Define a cor de fundo do rodapé */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 10px; /* Adiciona espaçamento interno */
+    color: #ffffff; /* Define a cor do texto no rodapé */
+}
+
+footer p {
+    margin: 0; /* Remove margem ao redor do parágrafo no rodapé */
+}
+
+.card {
+    background-color: #a67c52;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #5e4635;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.2s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para o cabeçalho e navegação */
+header {
+    background-color: #5e4635; /* Cor de fundo do menu */
+    padding: 10px;
+}
+
+/* Menu horizontal */
+.menu ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza o menu */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove o espaçamento interno */
+}
+
+.menu ul li {
+    margin: 0 15px; /* Espaçamento horizontal entre os itens */
+}
+
+.menu ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: rgb(35, 18, 0); /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    padding: 8px 12px; /* Adiciona espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse */
+.menu ul li a:hover {
+    background-color: #a67c52; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}

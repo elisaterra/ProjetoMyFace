@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5e5d9;
+    color: #5e4635;
+}
+
+header {
+    background: #5e4635;
+    color: #a67c52;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para a imagem */
+    position: absolute; /* Posiciona a logo no canto */
+    top: 20px; /* Ajusta a posição vertical */
+    left: 20px; /* Ajusta a posição horizontal */
+    width: 120px; /* Ajusta o tamanho da logo */
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar a logo */
+    }
+
+nav ul { /* Remove os marcadores das listas de navegação (list-style: none) e remove qualquer espaçamento interno padrão (padding: 0). */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {  /* Define os itens da lista de navegação (li) para aparecerem em linha, em vez de um abaixo do outro 
+    (display: inline), e adiciona espaçamento lateral entre eles. */
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a { /* Estiliza os links da navegação. Define a cor como branca e remove o sublinhado padrão dos links. */
+    color: #fff;
+    text-decoration: none;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #a67c52;
+    border-radius: 8px;
+}
+
+footer {
+    background: #5e4635;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 90px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;  
+}
+
+a {
+    color: #a67c52; /* Define o estilo dos links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.pai {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    background-color:  #f5e5d9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+
+  .divum{
+    width: 52%;
+    height: 118%;
+  }
+
+  .divdois{
+    width: 52%;
+    height: 116%;
+  }
+
+  .divtres{
+    width: 50%;
+    height: 115%;
+  }
+
+  /* Cabeçalho e menu */
+header {
+    background-color: #5e4635;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover, .menu ul li a.active {
+    background-color: #a67c52;
+    color: white;
+}
